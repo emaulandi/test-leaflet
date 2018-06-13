@@ -1,0 +1,26 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "Centrale n": "Belleville", "Commune": "Belleville", "Départeme": "Cher", "Puissanc_2": "1 310", "Mise en se": 1988 }, "geometry": { "type": "Point", "coordinates": [ 2.84996, 47.50722 ] } },
+{ "type": "Feature", "properties": { "Centrale n": "Blayais", "Commune": "Braud-et-Saint-Louis", "Départeme": "Gironde", "Puissanc_2": "910", "Mise en se": 1981 }, "geometry": { "type": "Point", "coordinates": [ -0.62617, 45.24799 ] } },
+{ "type": "Feature", "properties": { "Centrale n": "Bugey", "Commune": "Saint-Vulbas", "Départeme": "Ain", "Puissanc_2": "910", "Mise en se": 1979 }, "geometry": { "type": "Point", "coordinates": [ 5.29032, 45.83291 ] } },
+{ "type": "Feature", "properties": { "Centrale n": "Cattenom", "Commune": "Cattenom", "Départeme": "Moselle", "Puissanc_2": "1 300", "Mise en se": 1987 }, "geometry": { "type": "Point", "coordinates": [ 6.24367, 49.40626 ] } },
+{ "type": "Feature", "properties": { "Centrale n": "Chinon-B", "Commune": "Avoine", "Départeme": "Indre-et-Loire", "Puissanc_2": "905", "Mise en se": 1984 }, "geometry": { "type": "Point", "coordinates": [ 0.18198, 47.2057 ] } },
+{ "type": "Feature", "properties": { "Centrale n": "Chooz-B", "Commune": "Chooz", "Départeme": "Ardennes", "Puissanc_2": "1 500", "Mise en se": 2000 }, "geometry": { "type": "Point", "coordinates": [ 4.80712, 50.10237 ] } },
+{ "type": "Feature", "properties": { "Centrale n": "Civaux", "Commune": "Civaux", "Départeme": "Vienne", "Puissanc_2": "1 495", "Mise en se": 2002 }, "geometry": { "type": "Point", "coordinates": [ 0.66487, 46.44421 ] } },
+{ "type": "Feature", "properties": { "Centrale n": "Cruas", "Commune": "Cruas", "Départeme": "Ardèche", "Puissanc_2": "915", "Mise en se": 1984 }, "geometry": { "type": "Point", "coordinates": [ 4.76525, 44.65691 ] } },
+{ "type": "Feature", "properties": { "Centrale n": "Dampierre", "Commune": "Dampierre", "Départeme": "Loiret", "Puissanc_2": "890", "Mise en se": 1980 }, "geometry": { "type": "Point", "coordinates": [ 2.51981, 47.76134 ] } },
+{ "type": "Feature", "properties": { "Centrale n": "Fessenheim", "Commune": "Fessenheim", "Départeme": "Haut-Rhin", "Puissanc_2": "880", "Mise en se": 1978 }, "geometry": { "type": "Point", "coordinates": [ 7.53763, 47.91471 ] } },
+{ "type": "Feature", "properties": { "Centrale n": "Flamanville", "Commune": "Flamanville", "Départeme": "Manche", "Puissanc_2": "1 330", "Mise en se": 1986 }, "geometry": { "type": "Point", "coordinates": [ -1.8658, 49.53207 ] } },
+{ "type": "Feature", "properties": { "Centrale n": "Golfech", "Commune": "Golfech", "Départeme": "Tarn-et-Garonne", "Puissanc_2": "1 310", "Mise en se": 1991 }, "geometry": { "type": "Point", "coordinates": [ 0.85198, 44.11411 ] } },
+{ "type": "Feature", "properties": { "Centrale n": "Gravelines", "Commune": "Gravelines", "Départeme": "Nord", "Puissanc_2": "910", "Mise en se": 1980 }, "geometry": { "type": "Point", "coordinates": [ 2.12554, 50.98707 ] } },
+{ "type": "Feature", "properties": { "Centrale n": "Nogent", "Commune": "Nogent", "Départeme": "Aube", "Puissanc_2": "1 310", "Mise en se": 1988 }, "geometry": { "type": "Point", "coordinates": [ 3.49817, 48.49262 ] } },
+{ "type": "Feature", "properties": { "Centrale n": "Paluel", "Commune": "Paluel", "Départeme": "Seine-Maritime", "Puissanc_2": "1 330", "Mise en se": 1985 }, "geometry": { "type": "Point", "coordinates": [ 0.62906, 49.83236 ] } },
+{ "type": "Feature", "properties": { "Centrale n": "Penly", "Commune": "Saint-Martin-en-Campagne et Penly", "Départeme": "Seine-Maritime", "Puissanc_2": "1 330", "Mise en se": 1990 }, "geometry": { "type": "Point", "coordinates": [ 1.22245, 49.95748 ] } },
+{ "type": "Feature", "properties": { "Centrale n": "Saint-Alban", "Commune": "Saint-Alban", "Départeme": "Isère", "Puissanc_2": "1 335", "Mise en se": 1986 }, "geometry": { "type": "Point", "coordinates": [ 5.33253, 45.27004 ] } },
+{ "type": "Feature", "properties": { "Centrale n": "St. Laurent", "Commune": "Saint-Laurent", "Départeme": "Loir-et-cher", "Puissanc_2": "915", "Mise en se": 1983 }, "geometry": { "type": "Point", "coordinates": [ 0.86747, 47.74823 ] } },
+{ "type": "Feature", "properties": { "Centrale n": "Tricastin", "Commune": "Pierrelatte", "Départeme": "Drôme", "Puissanc_2": "915", "Mise en se": 1980 }, "geometry": { "type": "Point", "coordinates": [ 4.69698, 44.37775 ] } }
+]
+}

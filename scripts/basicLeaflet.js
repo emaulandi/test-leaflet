@@ -132,6 +132,43 @@ function drawAero(fond) {
     });
 }
 
+function drawNucleaire(fond) {
+
+	var map = initFond(fond);
+	
+	drawPoint(map, fond, "data/centralesNucleaires_datagouv2014.geojson", "Centrale n", "img/nucleaire.png");
+
+}
+
+function drawPoint(map, fond, geojsonFile, popupField, iconFile) {
+
+    d3.json(geojsonFile, function (data) {
+    	
+    	var points = data.features ;
+    	console.log(points);
+    	
+    	function onEachFeature(feature, layer) {
+			if (feature.properties && feature.properties[popupField]) {
+				layer.bindPopup(feature.properties[popupField]);
+			}
+		}
+        
+        var icon = L.icon({
+		    iconUrl: iconFile,
+		    iconSize: [30, 30], // size of the icon
+        });
+    	
+    	L.geoJSON(points, {
+			pointToLayer: function (feature, latlng) {
+				return L.marker(latlng, {icon: icon}).addTo(map);
+				//return L.circleMarker(latlng, geojsonMarkerOptions);
+			},
+			onEachFeature: onEachFeature
+		}).addTo(map);
+    
+    });
+}
+
 
 
 
