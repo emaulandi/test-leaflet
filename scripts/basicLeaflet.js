@@ -45,6 +45,89 @@ function drawPerimeter(fond) {
 	
 }
 
+function drawParc(fond) {
+
+	var map = initFond(fond);
+	
+	var myStyle = {
+		fillColor: '#95C11F',
+		weight: 3,
+		color: '#52AE32',
+		opacity: 1
+	};
+
+	drawPerimeter2(map, fond, "data/parcsNaturels_OSM.geojson", myStyle);
+	/*
+	var myStyle2 = {
+		fillColor: '#0095DB',
+		weight: 3,
+		color: '#0080C9',
+		opacity: 1
+	};
+
+	drawPerimeter2(map, fond, "data/zonesInondables_georisques.geojson", myStyle2);
+	*/
+}
+
+function drawCentraleZoneInondable(fond) {
+
+	var map = initFond(fond);
+	
+	var myStyle2 = {
+		fillColor: '#0095DB',
+		weight: 3,
+		color: '#0080C9',
+		opacity: 1
+	};
+
+	drawPerimeter2(map, fond, "data/zonesInondables_georisques.geojson", myStyle2);
+	
+	drawPoint(map, fond, "data/centralesNucleaires_datagouv2014.geojson", "Centrale n", "img/nucleaire.png");
+}
+
+function drawZoneInodable(fond) {
+	var map = initFond(fond);
+	
+	var myStyle2 = {
+		fillColor: '#0095DB',
+		weight: 3,
+		color: '#0080C9',
+		opacity: 1
+	};
+
+	drawPerimeter2(map, fond, "data/zonesInondables_georisques.geojson", myStyle2);
+	
+}
+
+
+function zonesInondables(map,fond) {
+
+	var myStyle = {
+		fillColor: '#0095DB',
+		weight: 0.5,
+		color: '#0095DB',
+		opacity: 0.5
+	};
+
+	drawPerimeter2(map, fond, "data/zonesInondables_georisques.geojson", myStyle);
+}
+
+
+function drawPerimeter2(map, fond, dataUrl, myStyle) {
+
+	//var map = initFond(fond);
+	
+	d3.json(dataUrl, function (data) {
+	
+    	console.log(data);
+    	L.geoJson(data, {
+			style: myStyle
+		}).addTo(map);
+		
+    });
+	
+}
+
 
 function drawGares(fond) {
 
