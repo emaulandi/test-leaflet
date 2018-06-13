@@ -91,6 +91,47 @@ function drawGares(fond) {
 
 }
 
+function drawAero(fond) {
+
+	var map = initFond(fond);
+
+    d3.json("data/aerodromesIGN2018.geojson", function (data) {
+    	
+    	var aerodromes = data.features ;
+    	console.log(aerodromes);
+    	
+    	function onEachFeature(feature, layer) {
+			if (feature.properties && feature.properties.TOPONYME) {
+				layer.bindPopup(feature.properties.TOPONYME);
+			}
+		}
+		
+		var firefoxIcon = L.icon({
+		    iconUrl: 'http://joshuafrazier.info/images/firefox.svg',
+		    iconSize: [38, 95], // size of the icon
+        });
+        
+        var planeIcon = L.icon({
+		    iconUrl: 'img/plane_square.png',
+		    iconSize: [40, 40], // size of the icon
+        });
+        
+        var decollageIcon = L.icon({
+		    iconUrl: 'img/decollage.png',
+		    iconSize: [30, 30], // size of the icon
+        });
+    	
+    	L.geoJSON(aerodromes, {
+			pointToLayer: function (feature, latlng) {
+				return L.marker(latlng, {icon: decollageIcon}).addTo(map);
+				//return L.circleMarker(latlng, geojsonMarkerOptions);
+			},
+			onEachFeature: onEachFeature
+		}).addTo(map);
+    
+    });
+}
+
 
 
 
